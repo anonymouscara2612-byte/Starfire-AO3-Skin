@@ -1,5 +1,5 @@
 # Starfire-AO3-Skin
-How To Add Skin:
+**How To Add Skin:**
 
 1. Copy the code
 
@@ -10,3 +10,5 @@ How To Add Skin:
 4. Scroll to the end, hit submit.
 
 5. Once it's created, just click "Use" to apply the skin.
+
+**NOTE:** Some regions doesn't support pictures uploaded to tumblr. So I made another version of the code with a different image hosting site (which does work for those regions as far as I know). The other version is in the "alternate CSS Code" file.
