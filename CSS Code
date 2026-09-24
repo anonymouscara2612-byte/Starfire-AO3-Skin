@@ -5,7 +5,7 @@ h4,
 h5,
 h6,
 .heading {
-  font-family: "Century Gothic", "Merriweather", "Georgia", sans-serif;
+  font-family: "Century Gothic", "Merriweather", "Times New Roman", sans-serif;
   border-bottom: none;
   font-weight: normal;
   color: #CCBFDB;
@@ -78,7 +78,7 @@ h6,
   width: 20em;
   background: #1A2416;
   border: 1px solid #1A2416;
-  font-family: "Century Gothic", "Merriweather", "Georgia", sans-serif;
+  font-family: "Century Gothic", "Merriweather", "Times New Roman", sans-serif;
   border-bottom: none;
   font-weight: normal;
   color: #CCBFDB;
@@ -92,13 +92,16 @@ h6,
 
 #header a.dropdown-toggle,
 #greeting .user > li:nth-of-type(3) a {
+  background: #1A2416;
+  border-radius: 25px;
   color: #CCBFDB !important;
-  font-family: "Century Gothic", "Merriweather", "Georgia", sans-serif;
+  font-family: "Century Gothic", "Merriweather", "Times New Roman", sans-serif;
   border-bottom: none;
   font-weight: normal;
 }
 
 #header .menu li a {
+  background: #1A2416;
   color: #CCBFDB !important;
 }
 
@@ -108,7 +111,8 @@ h6,
 
 #header .dropdown:hover a,
 #greeting .user > li:nth-of-type(3) a:hover {
-  background: transparent;
+  background: #1A2416;
+  border-radius: 0px;
   color: #CEA3A2 !important;
 }
 
@@ -143,17 +147,25 @@ h6,
   font-variant: small-caps;
 }
 
-.favorite.module.odd h3.heading,
 .latest.news.module h3.heading,
-.latest.messages.module.odd h3.heading,
-.social.module h3.heading {
+.latest.messages.module.odd h3.heading {
   border-bottom: none;
-  background: rgba(13, 18, 11, 0.4);
+  background: rgba(13, 18, 11, 0.7);
+  border-radius: 10px;
+}
+
+div.favorite.module {
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: rgba(13, 18, 11, 0.7);
+  box-shadow: none;
 }
 
 .splash .favorite li:nth-of-type(2n+1) a,
 .splash .favorite li:nth-of-type(2n+2) a {
-  background: rgba(0,0,0,0);
+  background: rgba(13, 18, 11, 0.5);
+  border-radius: 10px;
   color: #CCBFDB;
 }
 
@@ -187,7 +199,7 @@ h6,
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-30%);
   width: 80px;
   height: 87px;
   background-image: url("https://64.media.tumblr.com/3a6e4cfccf54a176f94d9b5bcef39408/ba6ca008c6a9c5c2-e8/s500x750/35c93f0d7590d6f98773ddec5a98fac23a2ee775.png");
@@ -206,28 +218,40 @@ h6,
   left: 0;
   right: 0;
   bottom: 0;
+  transform: translateY(20px);
+  border-radius: 10px;
+  background: rgba(13, 18, 11, 0.7);
   text-align: center;
   font-size: 12px;
   color: #CCBFDB;
-  opacity: 0.9;
+  opacity: 1;
   white-space: pre;
 }
 
 .news.index.group li.post.group {
-  background: rgba(13, 18, 11, 0.4);
-  border: 1px solid transparent;
+  background: rgba(13, 18, 11, 0.7);
+  border-radius: 10px;
+  border: 10px solid transparent;
   padding: 0.4em;
   margin-bottom: 2em;
   color: #CCBFDB;
 }
 
 .splash .news blockquote p:first-child {
-  padding-left: 100px;
+  padding-left: 90px;
   background: url("https://64.media.tumblr.com/ec9892e6783d27814ef8b54fb23f418a/ba6ca008c6a9c5c2-86/s1280x1920/9de13f5ef88272e95f9f53a2ca9d6c7d1c047db3.png");
   background-size: 80px 80px;
   background-position-x: left;
   background-position-y: top;
   background-repeat: no-repeat;
+}
+
+div.social.module {
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: rgba(13, 18, 11, 0.7);
+  box-shadow: none;
 }
 
 .social.module p {
@@ -266,7 +290,7 @@ input[type="submit"],
 button,
 .current,
 .actions label {
-  background: rgba(21, 28, 17, 0.4);
+  background: rgba(21, 28, 17, 0.7);
   border: 0.5px dashed #3D2959;
   color: #CCBFDB;
   border-radius: 8px;
@@ -332,7 +356,7 @@ fieldset fieldset {
 input,
 textarea,
 select {
-  background: rgba(21, 28, 17, 0.4);
+  background: rgba(21, 28, 17, 0.7);
   color: #CCBFDB;
   border: 2px solid #1A2416;
   border-radius: 8px;
@@ -386,7 +410,7 @@ span.question {
   border: 1px solid #3B302A;
   padding: 1px;
   color: #CCBFDB;
-  font-family: "Century Gothic", "Georgia", sans-serif;
+  font-family: "Century Gothic", "Times New Roman", sans-serif;
 }
 
 input[type="checkbox"],
@@ -503,8 +527,8 @@ dl.subscription.index.group {
 #main.users-change_email.dashboard.region dl,
 dl.meta,
 form dl {
-  background: rgba(13, 18, 11, 0.4);
-  border: 2px solid rgba(13, 18, 11, 0.4);
+  background: rgba(13, 18, 11, 0.7);
+  border: 2px solid rgba(13, 18, 11, 0.7);
   border-radius: 8px;
   color: #CCBFDB;
 }
@@ -543,7 +567,7 @@ div.preface .module::after {
   background-repeat: no-repeat;
   background-position: center;
   display: block;
-  width: 50px;
+  width: 60px;
   height: 50px;
   margin: 3px auto 0;
 }
@@ -659,7 +683,7 @@ span.unread {
 }
 
 #stat_chart svg text {
-  font-family: "Century Gothic", "Merriweather", "Georgia", sans-serif;
+  font-family: "Century Gothic", "Merriweather", "Times New Roman", sans-serif;
 }
 
 .listbox {
@@ -703,7 +727,7 @@ span.requested {
 
 #dashboard.own,
 .dashboard .own {
-  background: rgba(13, 18, 11, 0.4);
+  background: rgba(13, 18, 11, 0.7);
   border: 3px solid transparent;
   box-shadow: none;
   color: #CCBFDB;
@@ -735,7 +759,7 @@ span.requested {
 
 .listbox,
 fieldset fieldset.listbox {
-  background: rgba(13, 18, 11, 0.4);
+  background: rgba(13, 18, 11, 0.7);
   border: 1px solid transparent;
   box-shadow: none;
   border-radius: 8px;
@@ -753,7 +777,7 @@ fieldset fieldset.listbox {
 }
 
 li.blurb {
-  background: rgba(13, 18, 11, 0.4);
+  background: rgba(13, 18, 11, 0.7);
   border: 3px solid transparent;
   margin-bottom: 2em;
   box-shadow: none;
@@ -762,7 +786,7 @@ li.blurb {
 }
 
 #workskin {
-  background: rgba(13, 18, 11, 0.7);
+  background: rgba(13, 18, 11, 0.8);
   margin-top: 2em;
   padding: 1.2em;
   color: #CCBFDB;
@@ -794,10 +818,23 @@ ul.tags li a:before {
   text-shadow: 0 0 0 #CCBFDB;
 }
 
+ul.tags li a:hover::before {
+  content: "  🪐  ";
+  color: transparent !important;
+  text-shadow: 0 0 0 #CEA3A2;
+}
+
 h5.fandoms.heading a.tag {
   border: none !important;
   box-shadow: none !important;
   color: #CCBFDB !important;
+}
+
+h5.fandoms.heading a.tag:hover {
+  background: #1A2416;
+  border: none !important;
+  box-shadow: none !important;
+  color: #CEA3A2 !important;
 }
 
 .commas li:after {
@@ -847,9 +884,9 @@ ul.tags li a.tag {
 
 .blurb .datetime {
   display: block;
-  padding-bottom: 18px;
+  padding-bottom: 25px;
   background: url("https://64.media.tumblr.com/1e820cee4068ab2062e88aee8816bf23/ba6ca008c6a9c5c2-10/s400x600/065c0990bb8cef81251d65448ddd717f65a83c84.png") no-repeat center bottom;
-  background-size: 22px auto;
+  background-size: 35px auto;
 }
 
 ul.tags li.warnings:first-child:before {
@@ -905,7 +942,7 @@ li.relationships + li.freeforms:before {
   border: 1px solid #3D2959;
   border-radius: 8px;
   margin-bottom: .5em;
-  background-color: rgba(21, 28, 17, 0.4);
+  background-color: rgba(21, 28, 17, 0.7);
 }
 
 .filters .expanded .expander {
@@ -920,9 +957,11 @@ form dt {
 }
 
 p.kudos {
-  background: none !important;
+  background-image: none !important;
+  background-color: rgba(13, 18, 11, 0.7);
   position: relative;
-  padding-left: 60px;
+  border-radius: 10px;
+  padding-left: 80px;
   min-height: 80px;
   color: #CCBFDB;
 }
@@ -931,7 +970,7 @@ p.kudos::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: -10px;
+  left: 8px;
   transform: translateY(-50%);
   width: 65px;
   height: 65px;
@@ -1541,12 +1580,5 @@ img[src$="/images/lockblue.png"] {
   content: url("https://i.ibb.co/kVCsBwzY/zerafina-icon-lock-01.png");
   filter: brightness(0) saturate(100%) invert(14%) sepia(82%) saturate(300%) hue-rotate(330deg) brightness(60%) contrast(110%);
 }
-
-
-
-
-
-
-
 
 
